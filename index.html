@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="./lib/atom-one-dark.min.css">
+    <script src="lib/highlight.min.js"></script>
+    <script src="lib/python.min.js"></script>
+</head>
+<body>
+    <nav id="nav"></nav>
+    <main class="pt-4" id="main"></main>
+    <footer id="footer"></footer>
+
+    <!-- <script src="cacheHandler.js"></script> -->
+
+    <!-- Components. -->
+    <script src="states/states.js"></script>
+
+    <!-- Back-end. -->
+    <script src="server/tagsTable.js"></script>
+    <script src="server/blogsTable.js"></script>
+    <script src="server/blogsEndpoints.js"></script>
+    <script src="server/tagsEndpoints.js"></script>
+
+    <!-- Components. -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/blogsList.js"></script>
+    
+    <!-- Layouts. -->
+    <script src="layouts/normal.js"></script>
+
+    <!-- Pages. -->
+    <script src="pages/home.js"></script>
+    <script src="pages/about.js"></script>
+    <script src="pages/detail.js"></script>
+
+    <!-- Routers. -->
+    <script src="routers/layoutRouter.js"></script>
+    <script src="routers/pageRouter.js"></script>
+
+    <!-- First visit, go to home. -->
+    <script>
+        navigateTo("home");
+    </script>
+</body>
+</html>
