@@ -101,6 +101,8 @@ function navbar() {
     navThemeButtonElement.innerHTML = currentTheme !== 'dark' ? `${sunInnerHtml} Light mode` : `${moonInnerHtml} Dark mode`;
     navThemeButtonElement.className = currentTheme !== 'dark' ? 'btn btn-light' : 'btn btn-dark';
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    currentTheme === 'dark' ? highlightjsSetLightCss() : highlightjsSetDarkCss();
+    
     htmlElement.setAttribute('data-bs-theme', newTheme);
   }
 };

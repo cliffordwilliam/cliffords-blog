@@ -57,5 +57,6 @@ function detail(blogId) {
     mainElement.appendChild(detailContainer);
 
     // Highlight code snippet.
+    hljs.addPlugin(new CopyButtonPlugin());
     hljs.highlightAll();
 };
